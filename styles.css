@@ -88,3 +88,14 @@ h6 {
 .menu h1 {
   color: black;
 }
+
+.img-greyscale {
+  filter: grayscale(100%)
+}
+
+/* xl form control */
+
+.extra-large {
+  height: 60px;
+  font-size: 1.8rem;
+}
