@@ -15,9 +15,19 @@ app.use(express.static('public'))
 
 mongoose.connect(process.env.MONGODB_URI)
 
-const db = mongoose.connect
+const db = mongoose.connection
 
 db.on('error', console.error.bind(console, 'connection error:'))
 db.once('open', () => {
   console.log('connected to MongoDB')
+})
+
+// submission request for form (/submit route)
+app.post('/submit')
+
+// define server port
+
+const PORT = 8000
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`)
 })
