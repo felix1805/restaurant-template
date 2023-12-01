@@ -1,7 +1,7 @@
-*restaurant_notes.md*
-/restaurant_notes.md*
-*.md
+
 # Logs
+*.md
+restaurant-notes.md
 logs
 *.log
 npm-debug.log*
