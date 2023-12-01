@@ -1,3 +1,6 @@
+*restaurant_notes.md*
+/restaurant_notes.md*
+*.md
 # Logs
 logs
 *.log
@@ -130,3 +133,5 @@ dist
 .pnp.*
 
 restaurant_notes.md
+restaurant_notes
+
