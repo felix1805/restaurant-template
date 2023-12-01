@@ -1,3 +1,5 @@
+<!-- version before schema modifications -->
+
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
@@ -47,8 +49,8 @@ app.post('/submit', async (req, res) => {
   try {
     const newContact = new Contact(formData)
     await newContact.save()  //post being saved to database using contactSchema
-    res.redirect('/?success')
-    console.log(req.body)
+    res.redirect('/?successs')
+    console.log(req)
   } catch (error) {
     res.redirect('/?error')
   }
@@ -64,3 +66,4 @@ app.listen(PORT, () => {
 
   console.log(`Server listening on ${PORT}`)
 })
+
